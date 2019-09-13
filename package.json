@@ -1,0 +1,16 @@
+{
+  "name": "parcel-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel --no-hmr src/index.html",
+    "start:raw": "parcel --no-hmr src/**/**",
+    "build:raw": "rm -rf dist && mkdir dist && parcel build --no-content-hash src/**/** --out-dir dist",
+    "build": "rm -rf dist && parcel build --no-content-hash src/index.html"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.12"
+  }
+}
